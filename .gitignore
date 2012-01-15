@@ -1,0 +1,4 @@
+target/
+lib_managed/
+.DS_Store
+project/boot
