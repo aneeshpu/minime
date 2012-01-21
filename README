@@ -1,1 +1,8 @@
-Jasdeep WAS here
+
+Install maven
+
+$ mvn clean install
+$ cd web
+$ mvn jetty:run
+
+Navigate to http://localhost:8080/minime
