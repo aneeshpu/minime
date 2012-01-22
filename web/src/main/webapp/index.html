@@ -7,23 +7,11 @@
     <script type="text/javascript" src="resources/js/mustache.js" language="JavaScript"></script>
     <script type="text/javascript" src="resources/js/sammy.js" language="JavaScript"></script>
     <script type="text/javascript" src="resources/js/sammy.mustache-0.7.1.min.js" language="JavaScript"></script>
+    <script type="text/javascript" src="resources/js/main.js" language="JavaScript"></script>
 
     <script type="text/javascript">
         $(document).ready(function(){
-            var app = Sammy('#main', function() {
-                this.use('Mustache');
-                this.get('#/hello', function() {
-                    var context = this;
-                    this.load('api/hello', {json : true})
-                    .then(function(data){
-                        context
-                        .render('greeting.mustache',data)
-                        .appendTo(context.$element());
-                    });
-                });
-            });
-
-        app.run('#/hello');
+            app.run('#/hello');
         });
     </script>
 
