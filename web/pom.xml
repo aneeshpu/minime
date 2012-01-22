@@ -52,6 +52,11 @@
             <artifactId>spring-webmvc</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test-mvc</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
         </dependency>
@@ -59,6 +64,15 @@
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
     </dependencies>
-
+    <repositories>
+        <repository>
+            <id>spring</id>
+            <url>http://maven.springframework.org/snapshot</url>
+        </repository>
+    </repositories>
 </project>
