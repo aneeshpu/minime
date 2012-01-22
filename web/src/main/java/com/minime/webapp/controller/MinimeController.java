@@ -15,7 +15,7 @@ public class MinimeController {
     @RequestMapping(method = RequestMethod.GET)
     public
     @ResponseBody
-    String greet() {
-        return new Minime().getGreeting();
+    Minime greet() {
+        return new Minime();
     }
 }
