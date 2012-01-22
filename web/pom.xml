@@ -23,7 +23,7 @@
                 <version>6.1.26</version>
                 <configuration>
                     <contextPath>/minime</contextPath>
-                    <scanIntervalSeconds>3</scanIntervalSeconds>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
                     <scanTargetPatterns>
                         <scanTargetPattern>
                             <directory>src/main/webapp/WEB-INF</directory>

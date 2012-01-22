@@ -2,3 +2,9 @@ target/
 lib_managed/
 .DS_Store
 project/boot
+core/.classpath
+core/.project
+core/.settings
+web/.settings
+web/.classpath
+web/.project

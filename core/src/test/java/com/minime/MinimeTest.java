@@ -8,6 +8,6 @@ public class MinimeTest {
     @Test
     public void testHello() throws Exception {
         Minime minime = new Minime();
-        Assert.assertThat(minime.getGreeting(), Is.is("hello world!"));
+        Assert.assertThat(minime.getGreeting(), Is.is("Hello Mini me!"));
     }
 }
