@@ -4,14 +4,29 @@
 <head>
     <title>minime</title>
     <script type="text/javascript" src="resources/js/jquery-1.7.1.js" language="JavaScript"></script>
+    <script type="text/javascript" src="resources/js/mustache.js" language="JavaScript"></script>
+    <script type="text/javascript" src="resources/js/sammy.js" language="JavaScript"></script>
+    <script type="text/javascript" src="resources/js/sammy.mustache-0.7.1.min.js" language="JavaScript"></script>
+
     <script type="text/javascript">
         $(document).ready(function(){
-            $.getJSON("api/hello", function(data){
-                $("#main").text(data.greeting);;
+            var app = Sammy('#main', function() {
+                this.use('Mustache');
+                this.get('#/hello', function() {
+                    var context = this;
+                    this.load('api/hello', {json : true})
+                    .then(function(data){
+                        context
+                        .render('greeting.mustache',data)
+                        .appendTo(context.$element());
+                    });
+                });
             });
-        });
 
+        app.run('#/hello');
+        });
     </script>
+
 </head>
 <body>
 <div id="main"></div>
