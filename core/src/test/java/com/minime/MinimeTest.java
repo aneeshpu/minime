@@ -1,13 +1,14 @@
 package com.minime;
 
-import org.hamcrest.core.Is;
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class MinimeTest {
     @Test
     public void testHello() throws Exception {
         Minime minime = new Minime();
-        Assert.assertThat(minime.getGreeting(), Is.is("Hello Mini me!"));
+        assertThat(minime.getGreeting(), is("Hello Mini me!"));
     }
 }
