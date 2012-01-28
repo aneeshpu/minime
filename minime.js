@@ -2,8 +2,8 @@ var connect = require('connect');
 
 var api = connect.router(function(app){
     app.get('/hello', function(req, res, next){
-        res.setHeader("Content-Type", "application/json");
-        res.end("{greeting:'hello minime'}");
+        res.setHeader("Content-Type", "application/json;charset=UTF-8");
+        res.end('{"greeting":"hello minime"}');
     });
 });
 
