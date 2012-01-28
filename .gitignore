@@ -8,3 +8,4 @@ core/.settings
 web/.settings
 web/.classpath
 web/.project
+node_modules
