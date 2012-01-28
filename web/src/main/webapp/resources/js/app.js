@@ -1,6 +1,6 @@
 var app = Sammy('#main', function() {
     this.use('Mustache');
-    this.get('#/minime', function() {
+    this.get('#/', function() {
         var context = this;
         this.load('api/hello', {json : true})
         .then(function(data){
