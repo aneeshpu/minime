@@ -15,4 +15,20 @@ var app = Sammy('#main', function() {
             .render('about.mustache')
             .replace(this.$element());
     });
+    
+    this.get("#/git", function(){
+            this
+            .render('git.mustache')
+            .replace(this.$element());
+    });
+
+    this.put('#/git', function(){
+        var context = this;
+        var user = context.params.user;
+        this.load('api/git/' + user)
+        .then(function(data){
+            $('#followers').text(data);
+        });
+        return false;
+    });
 });
