@@ -133,5 +133,6 @@
         <module>web</module>
     <module>linkedin</module>
     <module>github</module>
+    <module>stackoverflow</module>
   </modules>
 </project>
