@@ -8,3 +8,6 @@ core/.settings
 web/.settings
 web/.classpath
 web/.project
+*.iml
+*.ipr
+*.iws
