@@ -13,7 +13,8 @@ public class LinkedinController {
     @RequestMapping(method = RequestMethod.GET)
     public
     @ResponseBody
-    LinkedIn getLinked(){
+    LinkedIn link(){
+        System.out.println("linked");
         return new LinkedIn();
     }
 }

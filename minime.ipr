@@ -164,7 +164,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/github/github.iml" filepath="$PROJECT_DIR$/github/github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkedin/linkedin.iml" filepath="$PROJECT_DIR$/linkedin/linkedin.iml" />
       <module fileurl="file://$PROJECT_DIR$/minime.iml" filepath="$PROJECT_DIR$/minime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stackoverflow/stackoverflow.iml" filepath="$PROJECT_DIR$/stackoverflow/stackoverflow.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
@@ -187,6 +190,34 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.minime:core:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/minime/core/1.0-SNAPSHOT/core-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/linkedin/pom-javadoc.jar!/" />
+        <root url="jar://$PROJECT_DIR$/core/pom-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/minime/core/1.0-SNAPSHOT/core-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/linkedin/pom-sources.jar!/" />
+        <root url="jar://$PROJECT_DIR$/core/pom-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/minime/core/1.0-SNAPSHOT/core-1.0-SNAPSHOT-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.minime:linkedin:1.0-SNAPSHOT">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/minime/linkedin/1.0-SNAPSHOT/linkedin-1.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$PROJECT_DIR$/linkedin/pom-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/minime/linkedin/1.0-SNAPSHOT/linkedin-1.0-SNAPSHOT-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/linkedin/pom-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/minime/linkedin/1.0-SNAPSHOT/linkedin-1.0-SNAPSHOT-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-codec:commons-codec:1.4">
@@ -220,6 +251,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.3/servlet-api-2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:3.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: junit:junit:4.8.2">
