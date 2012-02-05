@@ -15,4 +15,15 @@ var app = Sammy('#main', function() {
             .render('about.mustache')
             .replace(this.$element());
     });
+
+    this.get('#/linkedin', function() {
+            var context = this;
+            this.load('api/linkedin', {json : true})
+            .then(function(data){
+                context
+                .render('linked.mustache',data)
+                .replace(context.$element());
+            });
+        });
+
 });

@@ -8,3 +8,8 @@ core/.settings
 web/.settings
 web/.classpath
 web/.project
+.classpath
+.project
+.settings
+*/.classpath
+github/.classpath

@@ -164,7 +164,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/github/github.iml" filepath="$PROJECT_DIR$/github/github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkedin/linkedin.iml" filepath="$PROJECT_DIR$/linkedin/linkedin.iml" />
       <module fileurl="file://$PROJECT_DIR$/minime.iml" filepath="$PROJECT_DIR$/minime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stackoverflow/stackoverflow.iml" filepath="$PROJECT_DIR$/stackoverflow/stackoverflow.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
