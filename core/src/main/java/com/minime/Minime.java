@@ -2,7 +2,7 @@ package com.minime;
 
 public class Minime {
 
-	public String getGreeting() {
+	public String getBeating() {
 		return "Hello Mini me!";
 	}
 

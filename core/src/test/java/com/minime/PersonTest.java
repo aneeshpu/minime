@@ -40,4 +40,10 @@ public class PersonTest {
         Person samePerson = new Person(new Name("first", "second", "last"), new Email("person@domain.com"));
         assertThat(person, is(samePerson));
     }
+    
+    @Test
+	public void displays_a_human_readable_string() {
+    	Person aneesh = new Person(new Name("Aneesh", "Puliyedath", "Udumbath"), new Email("aneeshpu@gmail.com"));
+    	assertThat(aneesh.toString(), is("Aneesh Puliyedath Udumbath"));
+	}
 }

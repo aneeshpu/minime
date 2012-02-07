@@ -1,41 +1,55 @@
 package com.minime.domain;
 
-import java.util.Set;
+import org.codehaus.jackson.annotate.JsonProperty;
 
 public class Person {
 
-    private Skills skills;
-    private Name name;
-    private Email email;
+	private Skills skills;
 
-    public Person(Name name, Email email){
-        this.name = name;
-        this.email = email;
-        skills = new Skills();
-    }
+	private Name name;
+	private Email email;
 
-    public void addSkill(Skill skill) {
-        skills.add(skill);
-    }
+	public Person(Name name, Email email) {
+		this.name = name;
+		this.email = email;
+		skills = new Skills();
+	}
 
-    public Boolean hasSkill(Skill skill) {
-        return skills.contains(skill);
-    }
+	public void addSkill(Skill skill) {
+		skills.add(skill);
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+	public Boolean hasSkill(Skill skill) {
+		return skills.contains(skill);
+	}
 
-        Person person = (Person) o;
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
 
-        if (email != null ? !email.equals(person.email) : person.email != null) return false;
+		Person person = (Person) o;
 
-        return true;
-    }
+		if (email != null ? !email.equals(person.email) : person.email != null)
+			return false;
 
-    @Override
-    public int hashCode() {
-        return email != null ? email.hashCode() : 0;
-    }
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		return email != null ? email.hashCode() : 0;
+	}
+
+	@JsonProperty("name")
+	public String toString() {
+		return name.toString();
+	}
+
+	/*
+	 * public String getName(){ return name.toString(); }
+	 */
+
 }

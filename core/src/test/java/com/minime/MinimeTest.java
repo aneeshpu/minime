@@ -9,6 +9,6 @@ public class MinimeTest {
     @Test
     public void testHello() throws Exception {
         Minime minime = new Minime();
-        assertThat(minime.getGreeting(), is("Hello Mini me!"));
+        assertThat(minime.getBeating(), is("Hello Mini me!"));
     }
 }

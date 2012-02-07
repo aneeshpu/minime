@@ -11,6 +11,8 @@ import org.springframework.test.web.server.request.MockMvcRequestBuilders;
 import org.springframework.test.web.server.result.MockMvcResultMatchers;
 import org.springframework.test.web.server.setup.MockMvcBuilders;
 
+import com.minime.domain.ProfileServiceImpl;
+
 import static org.junit.matchers.JUnitMatchers.containsString;
 import static org.springframework.test.web.server.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.server.result.MockMvcResultMatchers.content;
@@ -22,11 +24,11 @@ public class MinimeControllerTest {
 
     @Before
     public void setUp() throws Exception {
-        controller = new MinimeController();
+        controller = new MinimeController(new ProfileServiceImpl());
     }
 
     @Test
     public void testGreet() throws Exception {
-        standaloneSetup(controller).build().perform((get("/hello"))).andExpect(content().string(containsString("Hello Mini me!")));
+        standaloneSetup(controller).build().perform((get("/profile/aneeshpu"))).andExpect(content().string(containsString("Hello Mini me!")));
     }
 }

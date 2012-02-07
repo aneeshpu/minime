@@ -1,8 +1,13 @@
 package com.minime.domain;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 public class Name {
+	
     private String first;
+	
     private String middle;
+	
     private String last;
 
     public Name(String first, String middle, String last) {
@@ -31,5 +36,9 @@ public class Name {
         result = 31 * result + (middle != null ? middle.hashCode() : 0);
         result = 31 * result + (last != null ? last.hashCode() : 0);
         return result;
+    }
+    
+    public String toString(){
+    	return String.format("%s %s %s", first, middle, last);
     }
 }
