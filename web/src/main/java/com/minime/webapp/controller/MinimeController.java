@@ -27,6 +27,7 @@ public class MinimeController {
 	@RequestMapping(value = "/{profileId}", method = RequestMethod.GET)
 	@ResponseBody
 	public Person get(@PathVariable String profileId) {
+		System.out.println("Inside get");
 		return profileService.get(profileId);
 	}
 

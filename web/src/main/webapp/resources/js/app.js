@@ -25,5 +25,18 @@ var app = Sammy('#main', function() {
                 .replace(context.$element());
             });
         });
+    
+    this.get('#/profile', function() {
+    	
+        var context = this;
+        this.load('api/profile/aneeshpu', {json : true})
+        .then(function(data){
+            context
+            .render('profile.mustache',data)
+            .replace(context.$element());
+
+        });
+    });
+
 
 });
