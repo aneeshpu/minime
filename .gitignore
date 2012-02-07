@@ -13,3 +13,7 @@ web/.project
 .settings
 */.classpath
 github/.classpath
+**/*.iml
+*.ipr
+*.iml
+*.iws
