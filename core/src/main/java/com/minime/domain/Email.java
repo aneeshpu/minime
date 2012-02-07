@@ -13,11 +13,10 @@ public class Email {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Email email1 = (Email) o;
+        Email otherEmail = (Email) o;
 
-        if (email != null ? !email.equals(email1.email) : email1.email != null) return false;
+        return !(email != null ? !email.equals(otherEmail.email) : otherEmail.email != null);
 
-        return true;
     }
 
     @Override
