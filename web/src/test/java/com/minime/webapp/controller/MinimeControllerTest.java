@@ -29,6 +29,6 @@ public class MinimeControllerTest {
 
     @Test
     public void testGreet() throws Exception {
-        standaloneSetup(controller).build().perform((get("/profile/aneeshpu"))).andExpect(content().string(containsString("Hello Mini me!")));
+        standaloneSetup(controller).build().perform((get("/profile/aneeshpu"))).andExpect(content().string(containsString("Aneesh")));
     }
 }

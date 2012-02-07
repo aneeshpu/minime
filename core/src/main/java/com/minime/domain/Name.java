@@ -1,6 +1,5 @@
 package com.minime.domain;
 
-import org.codehaus.jackson.annotate.JsonProperty;
 
 public class Name {
 	
