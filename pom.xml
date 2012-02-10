@@ -97,7 +97,23 @@
 				<artifactId>servlet-api</artifactId>
 				<version>2.3</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-neo4j</artifactId>
+				<version>2.0.0.RELEASE</version>
+			</dependency>
+			<dependency>
+				<!-- For some weird reason the controller tests fail if spring data is 
+					included and hibernate validator is not. The error seems to be nested exception 
+					is javax.validation.ValidationException: Unable to find a default provider. 
+					Found the solution here http://stackoverflow.com/questions/2231100/spring-mvc-3-validation-unable-to-find-a-default-provider -->
+
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator-annotation-processor</artifactId>
+				<version>4.1.0.Final</version>
+			</dependency>
 		</dependencies>
+
 	</dependencyManagement>
 
 
@@ -143,4 +159,11 @@
 		<module>github</module>
 		<module>stackoverflow</module>
 	</modules>
+	<repositories>
+		<repository>
+			<id>spring-milestone</id>
+			<name>Spring Maven MILESTONE Repository</name>
+			<url>http://maven.springframework.org/milestone</url>
+		</repository>
+	</repositories>
 </project>

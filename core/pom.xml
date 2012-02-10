@@ -29,12 +29,25 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-neo4j</artifactId>
+		</dependency>
+
+		<dependency>
+			<!-- For some weird reason the controller tests fail if spring data is 
+				included and hibernate validator is not. The error seems to be nested exception 
+				is javax.validation.ValidationException: Unable to find a default provider. 
+				Found the solution here http://stackoverflow.com/questions/2231100/spring-mvc-3-validation-unable-to-find-a-default-provider -->
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator-annotation-processor</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>
