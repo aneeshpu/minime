@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.minime.Minime;
-import com.minime.domain.Email;
-import com.minime.domain.Name;
 import com.minime.domain.Person;
 import com.minime.domain.ProfileService;
 
