@@ -13,4 +13,6 @@
     <context:component-scan base-package="com.minime"/>
 
 	<neo4j:config storeDirectory="data/minime.db"/>
+	
+	<neo4j:repositories base-package="com.minime.domain.repository"/>
 </beans>

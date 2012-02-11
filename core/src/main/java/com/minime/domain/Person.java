@@ -1,13 +1,22 @@
 package com.minime.domain;
 
 import org.codehaus.jackson.annotate.JsonProperty;
+import org.springframework.data.neo4j.annotation.GraphId;
+import org.springframework.data.neo4j.annotation.NodeEntity;
 
+@NodeEntity
 public class Person {
+
+	@GraphId
+	Long nodeId;
 
 	private Skills skills;
 
 	private Name name;
 	private Email email;
+
+	private Person() {
+	}
 
 	public Person(Name name, Email email) {
 		this.name = name;
@@ -45,7 +54,9 @@ public class Person {
 
 	@JsonProperty("name")
 	public String toString() {
-		return name.toString();
+		if (name != null)
+			return name.toString();
+		return "No name";
 	}
 
 	/*

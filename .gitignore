@@ -17,3 +17,4 @@ github/.classpath
 *.ipr
 *.iml
 *.iws
+web/data
