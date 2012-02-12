@@ -175,13 +175,5 @@
 			<name>Spring Maven MILESTONE Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
 		</repository>
-		<repository>
-			<id>spring-maven-snapshot</id>
-			<url>http://maven.springframework.org/snapshot</url>
-			<name>Springframework Maven SNAPSHOT Repository</name>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
 	</repositories>
 </project>
