@@ -12,7 +12,12 @@
     <!-- Scans the classpath of this application for @Components to deploy as beans -->
     <context:component-scan base-package="com.minime"/>
 
-	<neo4j:config storeDirectory="data/minime.db"/>
+	<neo4j:config graphDatabaseService="graphDatabaseService"/>
 	
 	<neo4j:repositories base-package="com.minime.domain.repository"/>
+	
+	<bean id="graphDatabaseService" class="org.springframework.data.neo4j.rest.SpringRestGraphDatabase">
+		<constructor-arg index="0" value="http://localhost:7474/db/data"></constructor-arg>
+	</bean>
+	
 </beans>
